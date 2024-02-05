@@ -1,0 +1,76 @@
+
+* {
+  background-color: black;
+  font-family: arial;
+}
+
+
+.parent {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.parent .child {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  top: 30px;
+  width: 738px;
+  left: 250px;
+}
+.parent .child img {
+  margin: 2px;
+  cursor: pointer;
+}
+.parent .leftarrow {
+  background-color: #333;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  left: 228px;
+  width: 20px;
+  height: 50%;
+}
+.parent .leftarrow:hover, .parent .rigtharrow:hover {
+  cursor: pointer;
+  background-color: #111;
+}
+
+.parent .rigtharrow {
+  background-color: #333;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  left: 990px;
+  width: 20px;
+  height: 50%;
+}
+
+.child .item .title {
+  background: none;
+  position: absolute;
+  color: white;
+  bottom: 5px;
+}
+
+.parent .categorie-title {
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+}

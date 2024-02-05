@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index</title>
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/header.css">
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/meilleur_film.css">
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/films_mieux_notes.css">
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/horreur.css">
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/romance.css">
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/thriller.css">
+  <link rel="stylesheet" type="text/css" href="../Frontend/CSS/modal.css">
+  <script type="text/javascript" src="../Frontend/Js/modal.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="child">
+      <ul>
+        <li><a href="file:///C:\Users\USER\Documents\Formation 2023-2024\JustStreamit_Projet\Frontend\index.html" class="poster"><img src="../data/img/logo.png" class="logo"></a></li>
+        <li class="home"><a href="file:///C:\Users\USER\Documents\Formation 2023-2024\JustStreamit_Projet\Frontend\index.html">Home</a></li>
+        <li class="categories"><a href="#">Categories</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Meilleur Film -->
+  <div class="meilleur-film-parent">
+    <div class="item">
+      <img src="">
+      <h1 class="title"></h1>
+      <div class="description"></div>
+      <div class="btn-more">
+        <button onclick="openModal(this)">More info</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../Frontend/Js/Meilleur_film/meilleur_film_api.js"></script>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h1></h1>
+      <img src="">
+      <p class="description"></p>
+      <ul>
+        <li class="genres"></li>
+        <li class="directeur"></li>
+        <li class="acteurs"></li>
+        <li class="pays"></li>
+        <li class="durée"></li>
+        <li class="date_publication"></li>
+        <li class="imdb_score"></li>
+        <li class="rated"></li>
+        <li class="usa_gross_income"></li>
+    </div>
+  </div>
+  <script type="text/javascript" src="../Frontend/Js/modal.js"></script>
+
+  <!-- Films Mieux Notés -->
+  <div class="parent">
+    <div class="categorie-title">Films Mieux Notés</div>
+    <button class="leftarrow" onclick="moveLeft1()">&lt;</button>
+    <div class="child">
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+    </div>
+    <button class="rigtharrow" onclick="moveRight1()">&gt;</button>
+  </div>
+  <script type="text/javascript" src="../Frontend/Js/Films_mieux_notés/films_mieux_notes_api.js"></script>
+  <script type="text/javascript" src="../Frontend/Js/Films_mieux_notés/films_mieux_notes_slider.js"></script>
+
+  <!-- Horreur -->
+  <div class="parent2">
+    <div class="categorie-title">Horreur</div>
+    <button class="leftarrow" onclick="moveLeft2()">&lt;</button>
+    <div class="child2">
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+    </div>
+    <button class="rigtharrow" onclick="moveRight2()">&gt;</button>
+  </div>
+  <script type="text/javascript" src="../Frontend/Js/Horreur/horreur_api.js"></script>
+  <script type="text/javascript" src="../Frontend/Js/Horreur/horreur_slider.js"></script>
+
+  <!-- Romance -->
+  <div class="parent3">
+    <div class="categorie-title">Romance</div>
+    <button class="leftarrow" onclick="moveLeftromance()">&lt;</button>
+    <div class="child3">
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+    </div>
+    <button class="rigtharrow" onclick="moveRightromance()">&gt;</button>
+  </div>
+  <script type="text/javascript" src="../Frontend/Js/Romance/romance_api.js"></script>
+  <script type="text/javascript" src="../Frontend/Js/Romance/romance_slider.js"></script>
+
+  <!-- Thriller -->
+  <div class="parent4">
+    <div class="categorie-title">Thriller</div>
+    <button class="leftarrow" onclick="moveLeft4()">&lt;</button>
+    <div class="child4">
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+      <div class="item">
+        <img src="">
+        <div class="title"></div>
+      </div>
+    </div>
+    <button class="rigtharrow" onclick="moveRight4()">&gt;</button>
+  </div>
+  <script type="text/javascript" src="../Frontend/Js/thriller/thriller_slider.js"></script>
+  <script type="text/javascript" src="../Frontend/Js/thriller/thriller_api.js"></script>
+        <!-- Modal Box -->
+        <div id="modal-box" class="modal">
+          <div class="modal-content">
+              <i id="btn-close" class="fas fa-times"></i>
+              <div id="movie-info">movie_info</div>
+          </div>
+      </div>  
+
+</body>
+
+</html>

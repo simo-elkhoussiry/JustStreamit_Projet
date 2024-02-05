@@ -1,0 +1,54 @@
+.meilleur-film-parent {
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+   }
+  .meilleur-film-parent .item {
+    color: white;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .meilleur-film-parent .item img {
+    position: absolute;
+    top: 0;
+    left: 18%;
+    width: 219px;
+    height: 100%;
+  }
+  .meilleur-film-parent .item h1 {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    font-size: 5em;
+  }
+  
+  .meilleur-film-parent .item .description {
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    width: 40%;
+  }
+  
+  .meilleur-film-parent .item .btn-more {
+    position: absolute;
+    left: 40%;
+    top: 230px;
+  }
+  .meilleur-film-parent .item .btn-more button {
+    background-color: #333;
+    color: white;
+  
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .meilleur-film-parent .item .btn-more button:hover {
+    cursor: pointer;
+    background-color: #111;
+  }
